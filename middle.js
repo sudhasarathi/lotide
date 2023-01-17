@@ -18,16 +18,14 @@
 // };
 
 
-const middle = function(array) {
-  if (array.length < 3) {
+const middle = arr => {
+  const midIndexArr = Math.floor(arr.length / 2);
+  if (arr.length < 3) {
     return [];
-  } else if (array.length % 2 === 0) {
-    return array.slice(array.length / 2 - 1, array.length / 2 + 1);
+  } else if (arr.length % 2 === 0) {
+    return arr.slice(midIndexArr - 1, midIndexArr + 1);
   } else {
-    let newArray = [];
-    let middleNum = Math.round(array.length / 2);
-    newArray.push(array[middleNum - 1]);
-    return newArray;
+    return arr.slice(midIndexArr, midIndexArr + 1);
   }
 };
 
