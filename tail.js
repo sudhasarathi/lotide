@@ -1,11 +1,11 @@
 
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed : ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Assertion Failed : ${actual} !== ${expected}`);
-  }
-};
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`✅ Assertion Passed : ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑 Assertion Failed : ${actual} !== ${expected}`);
+//   }
+// };
 
 
 // eslint-disable-next-line func-style
@@ -16,4 +16,5 @@ function tail(array) {
   }
   return tailArray;
 }
-assertEqual(tail[9,6,5,7]);
+// assertEqual(tail[9,6,5,7]);
+module.exports = tail;
